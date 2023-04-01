@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>서버 생성</h1>
+    <!-- socket.send 메서드로 보낼 내용 -->
+    <button id="send" onclick="socket.send('hellow??한글 안됨?')">메시지 보내기</button>
+</body>
+<script>
+    // 웹소켓으로 통신하고 싶으면 ws://로 시작
+    // http 요청을 하고 싶으면 http://
+    let socket = new WebSocket("ws://localhost:8081")
+</script>
+</html>
