@@ -1,0 +1,15 @@
+// 웹소켓 시도
+// app.listen(8080,(err)=> {
+//     if(err) {console.log(err)};
+//     console.log("서버 정상 실행");
+//     // 웹 소켓
+//     const socket = new WebSocket.Server({
+//         port:8081
+//     });
+//     socket.on('connection', (ws,req)=> {
+//         ws.on('message', (msg)=> {
+//             console.log("이건 유저가 보낸 메시지입니다 : "+msg)
+//         })
+        
+//     })
+// });
