@@ -1,0 +1,23 @@
+{
+  "name": "web_socket_practice",
+  "version": "1.0.0",
+  "description": "23.04.01\r 웹 소켓을 연습하기 위해 생성한 레퍼지토리 생성\r 패키지JSON파일 gitignore\r 작업 시작",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JangRuBin2/web_Socket_Practice.git"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JangRuBin2/web_Socket_Practice/issues"
+  },
+  "homepage": "https://github.com/JangRuBin2/web_Socket_Practice#readme",
+  "dependencies": {
+    "socketio": "^1.0.0"
+  }
+}
