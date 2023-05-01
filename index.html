@@ -14,12 +14,15 @@
       <input type="button" id="send" value="전송하기">
     </form>
   </div>
+  <script src="/socket.io/socket.io.js"></script>
   <script>
+    const socket = io();
     const msgArea = document.getElementById("msgArea");
     const inputArea = document.getElementById("inputArea");
     const chat = document.getElementById("chat");
     const inputMsg = document.getElementById("inputMsg");
     const send = document.getElementById("send");
+    // send.addEventListener("click", )
   </script>
 </body>
 </html>
