@@ -17,6 +17,9 @@ io.on("connection", (socket)=> {
   socket.on("discconnect",()=> {
     console.log("유저가 탈주했다.");
   });
+  socket.on("send Message",(chatLog)=> {
+    console.log(chatLog);
+  });
 });
 server.listen(8080, (err)=> {
   if(err) {
