@@ -11,7 +11,7 @@
   <div id="inputArea">
     <form id="chat">
       <input type="text" id="inputMsg"/>
-      <button type="submit" id="send">전송</button>
+      <input type="submit" id="send">전송</input>
     </form>
   </div>
   <script src="/socket.io/socket.io.js"></script>
@@ -22,11 +22,11 @@
     const chat = document.getElementById("chat");
     const inputMsg = document.getElementById("inputMsg");
     const send = document.getElementById("send");
-    send.addEventListener("submit", (err)=> {
+    chat.addEventListener("submit", (err)=> {
       // 에러 발생시 이벤트 취소
       err.preventDefault();
       const chatLog = inputMsg.value;
-      console.log(chat);
+      // console.log(chat);
       socket.emit("send Mseaage", chatLog);
     } )
   
