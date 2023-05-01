@@ -10,8 +10,8 @@
   <div id="msgArea">채팅이 생길 곳</div>
   <div id="inputArea">
     <form id="chat">
-      <input type="text" id="inputMsg">
-      <input type="button" id="send" value="전송하기">
+      <input type="text" id="inputMsg"/>
+      <input type="button" id="send" value="전송하기"></input>
     </form>
   </div>
   <script src="/socket.io/socket.io.js"></script>
@@ -22,7 +22,14 @@
     const chat = document.getElementById("chat");
     const inputMsg = document.getElementById("inputMsg");
     const send = document.getElementById("send");
-    // send.addEventListener("click", )
+    send.addEventListener("click", (err)=> {
+      // 에러 발생시 이벤트 취소
+      err.preventDefault();
+      const chatLog = inputMsg.value;
+      console.log(chat);
+      socket.emit("send Mseaage", chatLog);
+    } )
+  
   </script>
 </body>
 </html>
