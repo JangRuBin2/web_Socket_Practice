@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/JangRuBin2/web_Socket_Practice#readme",
   "dependencies": {
+    "socket.io": "^4.6.1",
     "socketio": "^1.0.0"
   }
 }
